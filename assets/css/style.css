@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.index__inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 75px auto 100px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+}
+
+.index__header {
+    grid-area: header;
+    background-color: rgb(69, 154, 199);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.index__header .header__img {
+    border-radius: 50px;
+}
+
+.index__header .header__titulo {
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index__nav {
+    grid-area: nav;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.index__nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.index__nav ul li {
+    list-style: none;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.index__nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.index__main {
+    grid-area: main;
+    background-image: url(../img/fondoDePantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index__main .main__intro {
+    width: 100%;
+}
+
+.index__main .main__intro h2 {
+    text-align: left;
+    font-weight: 70px;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.index__main .main__intro p {
+    text-align: left;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Gentium Plus', serif;
+    font-weight: 100;
+}
+
+.index__main .conjuntoNaruto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.index__main .conjuntoNaruto h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.index__main .conjuntoNaruto img {
+    width: 100%;
+    padding: 20px;
+}
+
+.index__main .conjuntoNaruto p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.index__main .conjuntoDragonBall {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.index__main .conjuntoDragonBall h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.index__main .conjuntoDragonBall img {
+    width: 100%;
+    padding: 20px;
+}
+
+.index__main .conjuntoDragonBall p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.index__main .conjuntoOnePiece {
+    width: 50%;
+    padding: 20px;
+}
+
+.index__main .conjuntoOnePiece h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.index__main .conjuntoOnePiece img {
+    width: 100%;
+    padding: 20px;
+}
+
+.index__main .conjuntoOnePiece p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.index__main .conjuntoDemonSlayer {
+    width: 50%;
+    padding: 20px;
+}
+
+.index__main .conjuntoDemonSlayer h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.index__main .conjuntoDemonSlayer img {
+    width: 100%;
+    padding: 20px;
+}
+
+.index__main .conjuntoDemonSlayer p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.index__footer {
+    grid-area: footer;
+    background-color: rgb(15, 15, 125);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 10px;
+    color: rgb(118, 75, 75);
+}
+
+@media (max-width:480px) {
+    .index__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto 100px;
+        grid-template-areas: "header" "nav" "main" "footer";
+        display: flex;
+    }
+    .index__nav {
+        display: flex;
+    }
+    .index__nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .index__nav ul li {
+        padding: 5px;
+        margin: 0px;
+    }
+    .index__main .conjuntoNaruto {
+        width: 100%;
+    }
+    .index__main .conjuntoDragonBall {
+        width: 100%;
+    }
+    .index__main .conjuntoOnePiece {
+        width: 100%;
+    }
+    .index__main .conjuntoDemonSlayer {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .index__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto 100px;
+        grid-template-areas: "header" "nav" "main" "footer";
+        display: flex;
+    }
+    .index__nav {
+        display: flex;
+    }
+    .index__nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .index__nav ul li {
+        padding: 5px;
+        margin: 0px;
+    }
+    .index__main .conjuntoNaruto {
+        width: 100%;
+    }
+    .index__main .conjuntoDragonBall {
+        width: 100%;
+    }
+    .index__main .conjuntoOnePiece {
+        width: 100%;
+    }
+    .index__main .conjuntoDemonSlayer {
+        width: 100%;
+    }
+}
+
+.animesFav__inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 75px auto 100px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+}
+
+.animesFav__header {
+    grid-area: header;
+    background-color: rgb(69, 154, 199);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.animesFav__header .header__img {
+    border-radius: 50px;
+}
+
+.animesFav__header .header__titulo {
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.animesFav__nav {
+    grid-area: nav;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.animesFav__nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.animesFav__nav ul li {
+    list-style: none;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.animesFav__nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.animesFav__main {
+    grid-area: main;
+    background-image: url(../img/fondoDePantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animesFav__main .videoNaruto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.animesFav__main .videoNaruto h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.animesFav__main .videoNaruto iframe {
+    width: 100%;
+    padding: 20px;
+}
+
+.animesFav__main .videoNaruto p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.animesFav__main .videoDragonBall {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.animesFav__main .videoDragonBall h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.animesFav__main .videoDragonBall iframe {
+    width: 100%;
+    padding: 20px;
+}
+
+.animesFav__main .videoDragonBall p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.animesFav__main .videoOnePiece {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.animesFav__main .videoOnePiece h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.animesFav__main .videoOnePiece iframe {
+    width: 100%;
+    padding: 20px;
+}
+
+.animesFav__main .videoOnePiece p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.animesFav__main .videoDemonSlayer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.animesFav__main .videoDemonSlayer h3 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+.animesFav__main .videoDemonSlayer iframe {
+    width: 100%;
+    padding: 20px;
+}
+
+.animesFav__main .videoDemonSlayer p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.animesFav__footer {
+    grid-area: footer;
+    background-color: rgb(15, 15, 125);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 10px;
+    color: rgb(118, 75, 75);
+}
+
+@media (max-width:480px) {
+    .animesFav__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto 100px;
+        grid-template-areas: "header" "nav" "main" "footer";
+        display: flex;
+    }
+    .animesFav__nav {
+        display: flex;
+    }
+    .animesFav__nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .animesFav__nav ul li {
+        padding: 5px;
+        margin: 0px;
+    }
+    .animesFav__main .videoNaruto {
+        width: 100%;
+    }
+    .animesFav__main .videoDragonBall {
+        width: 100%;
+    }
+    .animesFav__main .videoOnePiece {
+        width: 100%;
+    }
+    .animesFav__main .videoDemonSlayer {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .animesFav__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto 100px;
+        grid-template-areas: "header" "nav" "main" "footer";
+        display: flex;
+    }
+    .animesFav__nav {
+        display: flex;
+    }
+    .animesFav__nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .animesFav__nav ul li {
+        padding: 5px;
+        margin: 0px;
+    }
+    .animesFav__main .videoNaruto {
+        width: 100%;
+    }
+    .animesFav__main .videoDragonBall {
+        width: 100%;
+    }
+    .animesFav__main .videoOnePiece {
+        width: 100%;
+    }
+    .animesFav__main .videoDemonSlayer {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .videoNaruto iframe {
+        height: 320px;
+    }
+    .videoDragonBall iframe {
+        height: 320px;
+    }
+    .videoOnePiece iframe {
+        height: 320px;
+    }
+    .videoDemonSlayer iframe {
+        height: 320px;
+    }
+}
